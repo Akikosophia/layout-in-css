@@ -6,7 +6,63 @@
     <title>Advanced Layout 9</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      
+   body{
+    position: relative;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-flow: column wrap; */
+    /* align-items: flex-start; */
+    display: grid;
+    place-items: center;
+    
+   }
+
+    main{
+      position: absolute;
+      border-radius: 50%;
+      width: 500px;
+      height: 500px;
+    }
+
+    nav{
+      position: absolute;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      transition: 1s;
+    }
+   
+   header{
+      position: absolute;
+      border-radius: 50%;
+      width: 200px;
+      height:200px;
+      z-index: 1;
+      transition: 1s;
+   }
+  
+   footer{
+      position: absolute;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      transition: 1s;
+   }
+
+   body:hover nav {
+    translate: -50px -300px;
+   }
+
+   body:hover header {
+    translate: 200px -160px;
+   }
+
+   body:hover footer {
+    translate: -100px 250px;
+   }
+
+
     </style>
   </head>
   <body id="advanced-layout-9">

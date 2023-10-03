@@ -6,7 +6,48 @@
     <title>Advanced Layout 7</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+       
+    body{
+    position: relative;
+    display: grid;
+    place-items: center;
+   }
+
+    main{
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      translate: -50px 150px;
+      z-index: 1;
+      
+    }
+
+    nav{
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      z-index: 2;
+      translate: 200px -100px;
+      transform: rotate(45deg);
+    }
+   
+   header{
+      position: absolute;
+      width: 150px;
+      height:150px;
+      z-index: 3;
+      translate: 300px -250px;
+   }
+  
+   footer{
+      position: absolute;
+      transform: rotate(45deg);
+      width: 200px;
+      height: 200px;
+      translate: -220px 450px;
+      
+   }
+
     </style>
   </head>
   <body id="advanced-layout-7">

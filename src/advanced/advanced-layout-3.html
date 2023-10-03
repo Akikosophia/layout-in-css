@@ -7,16 +7,46 @@
     <link rel="stylesheet" href="../style.css" />
     <style>
     
-   body{
+    body{
+    position: relative;
     display: grid;
-    grid-template-columns: 20fr 5fr;
-     grid-template-rows: 2fr 2fr 2fr;
-     grid-template-areas: 
-     " header main "
-     "nav"
-     "footer";
+    place-items: center;
+    
    }
+  
+   
+    main{
+      position: absolute;
+      width: 500px;
+      height: 750px;
+      
+    }
 
+    nav{
+      position: absolute;
+      width: 300px;
+      height: 150px;
+      z-index: 1;
+      translate: -200px -10px;
+    }
+   
+   header{
+      position: absolute;
+      width: 300px;
+      height:150px;
+      z-index: 1;
+      translate: -200px -250px;
+      
+   }
+  
+   footer{
+      position: absolute;
+      width: 300px;
+      height: 150px;
+      z-index: 1;
+      translate: -200px 250px;
+      
+   }
 
     </style>
   </head>
